@@ -10,10 +10,12 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
+  /* width: 1390px; */
+  width: 100vw;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: black;
   position: relative;
-  overflow: auto;
 }
 img {
   width: 100%;
@@ -21,19 +23,17 @@ img {
 /*leader*/
 .leader {
   display: flex;
-  position: relative;
+  justify-content: space-evenly;
 }
 .junior-one {
+  display: flex;
 }
 .junior-two {
-  position: absolute;
-  margin-left: 17%;
-  top: -5%;
+  display: flex;
 }
 .junior-three {
-  position: absolute;
-  margin-left: 69%;
-  top: -5%;
+  display: flex;
+  align-items: flex-start;
 }
 /*leader*/
 /*gowtham*/
@@ -55,17 +55,21 @@ span {
 }
 
 .name {
-  color: black;
+  /* color: black; */
+  color: #fff;
+  font-size: 1rem;
 }
 
-.user-name {
+.user-names {
   color: gray;
+  font-size: 0.8rem;
 }
 
 .left-side {
   width: 15rem;
   height: 100vh;
-  background-color: white;
+  /* background-color: white; */
+  background-color: black;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -76,16 +80,19 @@ span {
 .icon {
   margin-left: 50px;
   font-size: 20px;
-  color: black;
+  /* color: black; */
+  color: #fff;
   border-radius: 50%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .user-img-30 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  /* border: 2px solid black; */
+  margin-top: -2px;
   object-fit: cover;
 }
 
@@ -99,11 +106,13 @@ a {
   text-decoration: none;
   display: flex;
 }
-
 a:hover {
   padding: 10px;
   border-radius: 30px;
-  background-color: rgb(213, 213, 213);
+  /* background-color: rgb(213, 213, 213); */
+  background-color: rgb(44, 43, 43);
+
+  /* background-color: black; */
 }
 
 .fa-twitter {
@@ -115,7 +124,8 @@ a:hover {
 }
 
 .fa-user {
-  margin-right: 10px;
+  margin-right: 8px;
+  background-color: rgb(44, 43, 43);
 }
 /*gowtham*/
 
@@ -123,19 +133,21 @@ a:hover {
 .main-ctn {
   width: 40rem;
   height: auto;
-  margin: 2rem 1rem;
-  border: 2px solid rgb(230, 236, 240);
+  /* margin: 1rem 1rem; */
+  border: 1px solid rgb(101, 119, 134);
 }
 .feed-header {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: black;
 }
 .home {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   padding-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 15px;
   padding: 1rem;
+  color: #fff;
 }
 a {
   text-decoration: none;
@@ -146,7 +158,7 @@ a {
   justify-content: space-around;
   border-style: none;
   cursor: pointer;
-  border-bottom: 5px solid rgb(230, 236, 240);
+  border-bottom: 1px solid rgb(101, 119, 134);
 }
 .top-anc a {
   padding: 1rem 7rem;
@@ -157,6 +169,7 @@ a {
   padding: 1rem 7rem;
   font-size: 1.2rem;
   font-weight: 700;
+  color: #fff;
 }
 .one {
   text-decoration: underline;
@@ -167,15 +180,17 @@ a {
   color: gray;
 }
 .top-anc a:hover {
-  background-color: lightgrey;
+  background-color: rgb(44, 43, 43);
 }
 .post {
-  background-color: #fff;
-  border-bottom: 5px solid rgb(230, 236, 240);
+  /* background-color: #fff; */
+  border-bottom: 0.1rem solid rgb(101, 119, 134);
+  background-color: black;
 }
 .form-one {
   display: flex;
   padding: 0.3rem 1rem;
+  background-color: black;
 }
 .profile {
   display: inline-block;
@@ -192,6 +207,7 @@ a {
   font-size: 1.5rem;
   font-weight: 300;
   outline: none;
+  background-color: black;
 }
 .post input::placeholder {
   color: rgba(123, 124, 126, 0.719);
@@ -204,7 +220,7 @@ a {
   padding-bottom: 0.8rem;
 }
 .post-icons {
-  padding-left: 4rem;
+  padding-left: 6rem;
   color: #1da1f2;
   cursor: pointer;
 }
@@ -221,7 +237,7 @@ a {
   font-weight: 600;
   font-size: 1rem;
   padding: 0.7rem 1rem;
-  background: #8ed0f9;
+  background: #1da1f2;
   color: #fff;
   border-radius: 25px;
   margin-right: 1rem;
@@ -232,7 +248,7 @@ a {
 .world {
   margin-left: 90px;
   color: #1da1f2;
-  border-bottom: 2px solid rgb(230, 236, 240);
+  border-bottom: 1px solid rgb(101, 119, 134);
   padding-bottom: 30px;
   margin-right: 20px;
 }
@@ -240,7 +256,7 @@ a {
   color: #1da1f2;
   text-align: center;
   font-size: 1.2rem;
-  border-bottom: 2px solid rgb(230, 236, 240);
+  border-bottom: 1px solid rgb(101, 119, 134);
   padding: 1rem 0;
   cursor: pointer;
 }
@@ -266,11 +282,12 @@ a {
   cursor: pointer;
 }
 .tweets :hover {
-  background-color: rgb(245, 248, 250);
+  /* background-color: rgb(245, 248, 250); */
 }
 .full-name {
   font-size: 1rem;
   font-weight: 700;
+  color: white;
 }
 .full-name:hover {
   text-decoration: underline;
@@ -281,6 +298,7 @@ a {
   flex-direction: column;
   flex-wrap: nowrap;
   color: rgb(20, 23, 26);
+  /* color: #fff; */
   justify-content: space-between;
 }
 .user-names {
@@ -299,12 +317,14 @@ a {
 .describe {
   font-size: 1rem;
   font-weight: 600;
+  color: #fff;
 }
 .full-name {
   padding-right: 10px;
   font-size: 1rem;
   font-weight: 700;
-  color: rgb(20, 23, 26);
+  /* color: rgb(20, 23, 26); */
+  color: #fff;
 }
 .full-name i.blue {
   color: rgba(29, 161, 242, 1);
@@ -317,11 +337,12 @@ a {
   color: rgb(101, 119, 134);
 }
 
-.more {
+.mores {
   padding-right: 1rem;
-  color: rgb(101, 119, 134);
+  color: rgb(205, 200, 200);
 }
-.more i.blue:hover {
+.mores i.blue:hover {
+  /* color: rgb(205, 200, 200); */
   color: rgba(29, 161, 242, 1);
 }
 .hash {
@@ -410,7 +431,8 @@ a {
   font-weight: 600;
 }
 .describes span {
-  color: black;
+  /* color: black; */
+  color: white;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -447,19 +469,22 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
-  background-color: white;
-  padding: 10px;
-  width: 35%;
-  margin-left: 50%;
-  margin-right: 20px;
+  /* background-color: white; */
+  background-color: black;
+  padding: 5px;
+  width: 30rem;
 }
 .header {
   position: sticky;
   top: 0;
-  background-color: white;
-  padding-top: 3px;
+  display: inline-flex;
+  /* background-color: white; */
+  background-color: black;
+  padding-top: 2px;
+  /* padding: 1rem 0rem; */
+  width: 27rem;
 }
 .search-bar {
   display: flex;
@@ -467,19 +492,25 @@ a {
   align-items: center;
   gap: 1rem;
   padding: 15px 1.5rem;
-  margin-left: 30px;
   font-size: 18px;
-  width: 400px;
-  background-color: rgb(230, 236, 240);
+  width: 390px;
+  /* background-color: rgb(230, 236, 240); */
+  background-color: rgb(37, 37, 38);
+  /* background-color: black; */
   border-radius: 20px;
-  color: black;
+  /* color: black; */
+  /* color: #fff; */
+  color: rgb(205, 200, 200);
 }
 .subscription {
-  padding: 20px 1.5rem;
-  background-color: rgb(230, 236, 240);
-  color: black;
+  padding: 2rem 1.5rem;
+  /* background-color: rgb(230, 236, 240);
+  color: black; */
+  background-color: rgb(37, 37, 38);
+
+  color: #fff;
   width: 400px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 18px;
 }
 .verify {
@@ -496,14 +527,18 @@ a {
   font-size: 18px;
   font-weight: 600;
   padding: 8px 20px;
-  background-color: black;
+  /* background-color: black; */
+  background: #1da1f2;
   border-radius: 20px;
   color: #fff;
 }
 
 .trending {
-  background-color: rgb(230, 236, 240);
-  color: black;
+  /* background-color: rgb(230, 236, 240); */
+  background-color: rgb(37, 37, 38);
+
+  /* color: black; */
+  color: #fff;
   width: 400px;
   margin-top: 1rem;
   padding-bottom: 10px;
@@ -530,8 +565,9 @@ a {
   color: rgb(142, 139, 139);
 }
 .tv-show {
-  font-size: 18px;
-  color: black;
+  font-size: 15px;
+  /* color: black; */
+  color: #fff;
   font-weight: 700;
 }
 .tweetss {
@@ -591,23 +627,23 @@ a {
   cursor: pointer;
 }
 .first-place:hover {
-  background-color: rgb(213, 213, 213);
   cursor: pointer;
+  background-color: rgb(44, 43, 43);
 }
 .second-place:hover {
-  background-color: rgb(213, 213, 213);
   cursor: pointer;
+  background-color: rgb(44, 43, 43);
 }
 .third-place:hover {
-  background-color: rgb(213, 213, 213);
   cursor: pointer;
+  background-color: rgb(44, 43, 43);
 }
 .fourth-place:hover {
-  background-color: rgb(213, 213, 213);
   cursor: pointer;
+  background-color: rgb(44, 43, 43);
 }
 .fifth-place:hover {
-  background-color: rgb(213, 213, 213);
+  background-color: rgb(44, 43, 43);
   cursor: pointer;
 }
 
@@ -617,11 +653,12 @@ a {
   justify-content: center;
   align-items: flex-end;
   padding: 20px 1.5rem;
-  background-color: rgb(230, 236, 240);
-  color: black;
+  /* background-color: rgb(230, 236, 240); */
+  color: white;
   width: 400px;
   margin-top: 1rem;
   border-radius: 18px;
+  background-color: rgb(37, 37, 38);
 }
 .title-tag {
   width: 350px;
@@ -654,7 +691,8 @@ a {
 .hero-name {
   font-size: 18px;
   font-weight: 600;
-  color: black;
+  /* color: black; */
+  color: #fff;
 }
 .hero-name:hover {
   text-decoration: underline;
@@ -664,8 +702,8 @@ a {
 }
 .follow-btn {
   padding: 10px 20px;
-  background-color: black;
-  color: white;
+  color: black;
+  background-color: white;
   border-radius: 18px;
 }
 .following {
@@ -680,6 +718,9 @@ a {
 }
 .copy-right {
   width: 5%;
+  /* background-color: rgb(101, 119, 134); */
+  border-radius: 50%;
+  background-color: #fff;
 }
 .footer {
   color: gray;
@@ -689,6 +730,7 @@ a {
   justify-content: space-evenly;
   width: 25rem;
   font-size: 0.9rem;
+  margin-left: 10px;
 }
 .instruct-one {
   display: flex;

@@ -281,9 +281,7 @@ a {
   padding-right: 0.8rem;
   cursor: pointer;
 }
-.tweets :hover {
-  /* background-color: rgb(245, 248, 250); */
-}
+
 .full-name {
   font-size: 1rem;
   font-weight: 700;

@@ -10,12 +10,10 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  /* width: 1390px; */
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  /* background-color: rgb(255, 255, 255); */
   background-color: black;
-  position: relative;
+  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -23,7 +21,7 @@ img {
 /*leader*/
 .leader {
   display: flex;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 .junior-one {
   display: flex;
@@ -40,24 +38,37 @@ img {
 .new-logo {
   width: 100%;
   display: flex;
-  margin-left: 50px;
-  margin-top: 1rem;
+  margin-left: 30px;
 }
 .x {
-  width: 20%;
+  width: 30%;
+  cursor: pointer;
 }
 span {
-  margin-left: 5px;
+  gap: 0.5rem;
 }
 
-.id {
+.last-pic {
   display: flex;
+  gap: 0.2rem;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+}
+.last-pic:hover {
+  background-color: rgb(44, 43, 43);
+}
+.user-img-g {
+  width: 30%;
+  border-radius: 50%;
+  margin-top: -2px;
+  border: 2px solid white;
+  margin-left: -12px;
 }
 
 .name {
-  /* color: black; */
   color: #fff;
   font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 .user-names {
@@ -68,85 +79,50 @@ span {
 .left-side {
   width: 15rem;
   height: 100vh;
-  /* background-color: white; */
   background-color: black;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   list-style: none;
   overflow-y: scroll;
-  border: 2px solid rgb(101, 119, 134);
+  overflow-x: hidden;
+  position: fixed;
+  padding: 0 1rem 2rem 1rem;
 }
 
 .icon {
-  margin-left: 50px;
   font-size: 20px;
-  /* color: black; */
   color: #fff;
   border-radius: 50%;
-  /* border: 2px solid white; */
-}
-
-.user-img-30 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  /* border: 2px solid white; */
-  /* border: 2px solid black; */
-  margin-top: -2px;
-  object-fit: cover;
-}
-
-.menu-item {
-  padding: 0px 20px;
-  margin-left: -33px;
-  margin-top: 30px;
 }
 
 a {
   text-decoration: none;
   display: flex;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
 }
 a:hover {
-  padding: 10px;
   border-radius: 30px;
-  /* background-color: rgb(213, 213, 213); */
-  background-color: rgb(44, 43, 43);
-
-  /* background-color: black; */
-}
-
-.fa-twitter {
-  width: 100px;
-  font-size: 30px;
-}
-.fas {
-  margin-right: 10px;
-}
-
-.fa-user {
-  margin-right: 8px;
   background-color: rgb(44, 43, 43);
 }
+
 /*gowtham*/
 
 /*meg*/
 .main-ctn {
   width: 40rem;
   height: auto;
-  /* margin: 1rem 1rem; */
+  margin-left: 15rem;
   border: 1px solid rgb(101, 119, 134);
 }
 .feed-header {
   position: sticky;
   top: 0;
-  /* background-color: #fff; */
   background-color: black;
 }
 .home {
   font-size: 1.4rem;
   padding-bottom: 20px;
-  margin-left: 15px;
   padding: 1rem;
   color: #fff;
 }
@@ -473,9 +449,13 @@ a {
   justify-content: center;
   /* background-color: white; */
   background-color: black;
-  padding: 5px;
+  /* padding: 5px; */
   width: 30rem;
+  /* overflow-y: scroll; */
+  position: sticky;
+  top: 0;
 }
+
 .header {
   position: sticky;
   top: 0;
@@ -555,6 +535,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  gap: 1rem;
 }
 
 .entertainment {
@@ -569,6 +550,7 @@ a {
   /* color: black; */
   color: #fff;
   font-weight: 700;
+  margin: 0.5rem 0;
 }
 .tweetss {
   font-size: 15px;
@@ -779,7 +761,7 @@ a {
   cursor: pointer;
   text-decoration: underline;
 }
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
   .leader {
     display: flex;
     flex-direction: column;
@@ -794,6 +776,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 50%;
-    width: 30rem;
+    width: 50rem;
+    border:none
   }
-}
+} */

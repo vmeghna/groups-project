@@ -23,16 +23,7 @@ img {
   display: flex;
   gap: 1rem;
 }
-.junior-one {
-  display: flex;
-}
-.junior-two {
-  display: flex;
-}
-.junior-three {
-  display: flex;
-  align-items: flex-start;
-}
+
 /*leader*/
 /*gowtham*/
 .new-logo {
